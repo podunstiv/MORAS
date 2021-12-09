@@ -1,0 +1,12 @@
+CHIP zadatak1B{
+
+		IN x,y,z;
+		OUT out;
+		
+		PARTS:
+		Not(in = y, out = ny);
+		Not(in = z, out = nz);
+		And(a = x, b = ny, out = xandny);
+		And(a = xandny, b = nz, out = out);
+}
+		
